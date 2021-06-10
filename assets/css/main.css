@@ -3792,6 +3792,10 @@ input, select, textarea {
 				text-align: center;
 			}
 
+      .post.featured img {
+				opacity: 0.80;
+			}
+
       #main .headline p {
         text-align: center;
       }
