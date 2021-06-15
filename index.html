@@ -199,34 +199,12 @@
 		<!-- Scripts -->
     <script>
       document.getElementById("nav-links").addEventListener("click", function(e) {
+        $('#nav-links li').each(function(i, li) {
+          var $link = $(li);
+          $link.removeClass(); 
+        });
         const listItem = e.target.closest("li");
         if (listItem) {
-          switch(listItem.id) {
-            case "nav-about":
-              document.getElementById("nav-skills").className = '';
-              document.getElementById("nav-projects").className = '';
-              document.getElementById("nav-contact").className = '';
-              break;
-            case "nav-skills":
-              document.getElementById("nav-about").className = '';
-              document.getElementById("nav-projects").className = '';
-              document.getElementById("nav-contact").className = '';
-              break;
-            case "nav-projects":
-              document.getElementById("nav-about").className = '';
-              document.getElementById("nav-skills").className = '';
-              document.getElementById("nav-contact").className = '';
-              break;
-            case "nav-contact":
-              document.getElementById("nav-about").className = '';
-              document.getElementById("nav-skills").className = '';
-              document.getElementById("nav-projects").className = '';
-              break;
-            default:
-              document.getElementById("nav-skills").className = '';
-              document.getElementById("nav-projects").className = '';
-              document.getElementById("nav-contact").className = '';
-          }
           listItem.className = "active";
         }
       });
