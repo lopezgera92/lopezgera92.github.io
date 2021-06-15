@@ -3629,7 +3629,6 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-    justify-content: right;
 		-moz-transition: -moz-transform 1s ease, opacity 1s ease;
 		-webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
 		-ms-transition: -ms-transform 1s ease, opacity 1s ease;
@@ -3862,6 +3861,10 @@ input, select, textarea {
           .round-image, .headline {
             margin: 0 auto;
           }
+
+          #skills ul {
+            grid-template-columns: repeat(2, 100px) !important;
+          }
 			}
 
 		#main > .posts {
@@ -3993,26 +3996,30 @@ input, select, textarea {
 
   #skills ul {
     list-style: none;
-    align-content: center;
     display: grid;
     gap: 2rem;
     grid-template-columns: repeat(5, 100px);
-    justify-content: center;
+    justify-content: space-around;
+    padding: 0;
   }
 
   #skills li {
-    display: inline-block;
     text-align: center;
-    vertical-align: middle;
+    padding: 0;
   }
 
+  #skills img {
+    display: inline-block;
+    height: 100%;
+  }
+  
   .icon-background {
     background-color: #d9948d;
     border-radius: 50%;
     width: 100px;
     height: 100px;
   }
-
+  
   .filter-white {
     filter: brightness(0) invert(1);
     height: 50%;
