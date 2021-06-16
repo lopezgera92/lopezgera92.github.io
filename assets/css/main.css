@@ -3971,6 +3971,10 @@ input, select, textarea {
 					margin-right: auto;
 				}
 
+        #empty {
+          display: none;
+        }
+
 			}
 
 		@media screen and (max-width: 736px) {
