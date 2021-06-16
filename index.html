@@ -161,7 +161,7 @@
               <h2>Xpress-Publishing</h2>
             </header>
             <div class="image fit"><img src="images/x-press-publishing.jpg" alt="" /></div>
-            <p>X-Press Publishing is a web application built using the React and Express frameworks. It is an internal tool for a fictional comic book store that serves as an online library for comic books. </p>
+            <p>X-Press Publishing is a web application built using the React and Express frameworks. It is an internal tool for a fictional comic book store that serves as an online catalog for comic books. </p>
             <ul class="actions special">
               <li><a href="#" class="button">Live Demo!</a></li>
             </ul>
@@ -200,12 +200,12 @@
     <script>
       document.getElementById("nav-links").addEventListener("click", function(e) {
         $('#nav-links li').each(function(i, li) {
-          var $link = $(li);
-          $link.removeClass(); 
+          var $navListItem = $(li);
+          $navListItem.removeClass(); 
         });
-        const listItem = e.target.closest("li");
-        if (listItem) {
-          listItem.className = "active";
+        const clickedListItem = e.target.closest("li");
+        if (clickedListItem) {
+          clickedListItem.className = "active";
         }
       });
     </script>
